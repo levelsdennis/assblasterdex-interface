@@ -23,7 +23,7 @@ schema.graphql
 /.swc
 
 # builds
-/build
+#/build
 /dts
 
 # misc

@@ -1,7 +1,6 @@
 {
   "name": "assblasterdex-interface",
   "version": "1.0.0",
-  "homepage": "https://levelsdennis.github.io/assblasterdex-interface",
   "description": "Front-end for the Assblaster decentralized exchange interface",
   "license": "GPL-3.0-or-later",
   "scripts": {

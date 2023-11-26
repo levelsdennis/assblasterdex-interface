@@ -46,7 +46,7 @@ const Gradient = styled.div<{ isDarkMode: boolean }>`
   ${({ isDarkMode }) =>
     isDarkMode
       ? css`
-          background: linear-gradient(rgba(8, 10, 24, 0) 0%, rgb(8 10 24 / 100%) 45%);
+          background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(8 10 24 / 100%) 45%);
         `
       : css`
           background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255 255 255 /100%) 45%);
@@ -78,7 +78,7 @@ const Glow = styled.div`
   position: absolute;
   top: 68px;
   bottom: 0;
-  background: radial-gradient(72.04% 72.04% at 50% 3.99%, #ff37eb 0%, rgba(166, 151, 255, 0) 100%);
+  background: radial-gradient(72.04% 72.04% at 50% 3.99%, #ffff39 0%, rgba(238, 255, 151, 0) 100%);
   filter: blur(72px);
   border-radius: 24px;
   max-width: 480px;
@@ -132,10 +132,10 @@ const TitleText = styled.h1<{ isDarkMode: boolean }>`
   ${({ isDarkMode }) =>
     isDarkMode
       ? css`
-          background: linear-gradient(20deg, rgba(255, 244, 207, 1) 10%, rgba(255, 87, 218, 1) 100%);
+          background: linear-gradient(20deg, rgba(255, 244, 207, 1) 10%, rgba(239, 255, 87, 1) 100%);
         `
       : css`
-          background: linear-gradient(10deg, rgba(255, 79, 184, 1) 0%, rgba(255, 159, 251, 1) 100%);
+          background: linear-gradient(10deg, rgba(255, 255, 80, 1) 0%, rgba(243, 255, 159, 1) 100%);
         `};
   background-clip: text;
   -webkit-background-clip: text;
@@ -177,7 +177,7 @@ const LandingButton = styled(BaseButton)`
 `
 
 const ButtonCTA = styled(LandingButton)`
-  background: linear-gradient(93.06deg, #ff00c7 2.66%, #ff9ffb 98.99%);
+  background: linear-gradient(93.06deg, #efff00 2.66%, #fffd9f 98.99%);
   border: none;
   color: ${({ theme }) => theme.white};
   transition: ${({ theme }) => `all ${theme.transition.duration.medium} ${theme.transition.timing.ease}`};
@@ -234,10 +234,10 @@ const AboutContentContainer = styled.div<{ isDarkMode: boolean }>`
   ${({ isDarkMode }) =>
     isDarkMode
       ? css`
-          background: linear-gradient(179.82deg, rgba(0, 0, 0, 0) 0.16%, #050026 99.85%);
+          background: linear-gradient(179.82deg, rgba(0, 0, 0, 0) 0.16%, #000000 99.85%);
         `
       : css`
-          background: linear-gradient(179.82deg, rgba(255, 255, 255, 0) 0.16%, #eaeaea 99.85%);
+          background: linear-gradient(179.82deg, rgba(255, 255, 255, 0) 0.16%, #ffffff 99.85%);
         `};
   @media screen and (min-width: ${BREAKPOINTS.md}px) {
     padding: 0 96px 5rem;
@@ -358,17 +358,17 @@ export default function Landing() {
         <ContentContainer isDarkMode={isDarkMode}>
           <TitleText isDarkMode={isDarkMode}>
             {shouldDisableNFTRoutes ? (
-              <Trans>Trade crypto with confidence</Trans>
+              "A S S B L A S T E R"
             ) : (
-              <Trans>Trade crypto and NFTs with confidence</Trans>
+              "A S S B L A S T E R"
             )}
           </TitleText>
           <SubTextContainer>
             <SubText>
               {shouldDisableNFTRoutes ? (
-                <Trans>Buy, sell, and explore tokens</Trans>
+                "(Backed by Paradigm)"
               ) : (
-                <Trans>Buy, sell, and explore tokens and NFTs</Trans>
+                "(Backed by Paradigm)"
               )}
             </SubText>
           </SubTextContainer>
@@ -398,10 +398,6 @@ export default function Landing() {
               element: InterfaceElementName.UNISWAP_WALLET_LANDING_PAGE_DOWNLOAD_BUTTON,
             })}
           >
-            <>
-              <UniswapAppLogo width="20" height="20" />
-              Download the Uniswap app
-            </>
           </DownloadWalletLink>
         </ContentContainer>
         <AboutContentContainer isDarkMode={isDarkMode}>

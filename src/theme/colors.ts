@@ -106,8 +106,8 @@ export const colors = {
   surface3_dark: '#FFFFFF12',
   surface4_dark: '#FFFFFF20',
   surface5_dark: '#00000004',
-  accent1_dark: '#FC72FF',
-  accent2_dark: '#311C31',
+  accent1_dark: '#FCFF50',
+  accent2_dark: '#30301C',
   neutral1_light: '#222222',
   neutral2_light: '#7D7D7D',
   neutral3_light: '#CECECE',
@@ -116,8 +116,8 @@ export const colors = {
   surface3_light: '#22222212',
   surface4_light: '#FFFFFF64',
   surface5_light: '#00000004',
-  accent1_light: '#FC72FF',
-  accent2_light: '#FFEFFF',
+  accent1_light: '#FCFF50',
+  accent2_light: '#FFFFF0',
   success: '#40B66B',
   critical: '#FF5F52',
   scrim: 'rgba(0, 0, 0, 0.60)',
@@ -150,7 +150,7 @@ const commonTheme = {
   chain_56_background: colors.networkBsc,
   promotional: colors.magenta300,
 
-  brandedGradient: 'linear-gradient(139.57deg, #FF79C9 4.35%, #FFB8E2 96.44%);',
+  brandedGradient: 'linear-gradient(139.57deg, #FFFF50 4.35%, #FFF4CF 96.44%);',
   promotionalGradient: colors.accent1_light,
 }
 

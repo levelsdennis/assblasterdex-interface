@@ -183,11 +183,11 @@ const Explore = ({ initialTab }: { initialTab?: ExploreTab }) => {
         {!isInfoExplorePageEnabled && (
           <TitleContainer>
             <MouseoverTooltip
-              text={<Trans>This table contains the top tokens by Uniswap volume, sorted based on your input.</Trans>}
+              text={"This table contains the top tokens by volume, sorted based on your input."}
               placement="bottom"
             >
               <ThemedText.LargeHeader>
-                <Trans>Top tokens on Uniswap</Trans>
+                Top Tokens on Assblaster
               </ThemedText.LargeHeader>
             </MouseoverTooltip>
           </TitleContainer>

@@ -61,7 +61,7 @@ export const marketplaceIcon = style([
 export const table = style([
   {
     borderCollapse: 'collapse',
-    boxShadow: '0 0 0 1px rgba(153, 161, 189, 0.24)',
+    boxShadow: '0 0 0 1px rgba(191, 191, 191, 0.24)',
     borderSpacing: '0px 40px',
   },
   sprinkles({

@@ -152,8 +152,8 @@ const zIndices = {
 export const vars = createGlobalTheme(':root', {
   color: {
     ...themeVars.colors,
-    fallbackGradient: 'linear-gradient(270deg, #D1D5DB 0%, #F6F6F6 100%)',
-    loadingBackground: '#24272e',
+    fallbackGradient: 'linear-gradient(270deg, #DBDBDB 0%, #F6F6F6 100%)',
+    loadingBackground: '#000000',
     cardDropShadow: 'rgba(0, 0, 0, 10%) 0px 4px 12px',
     green: '#209853',
     orange: '#FA2C38',

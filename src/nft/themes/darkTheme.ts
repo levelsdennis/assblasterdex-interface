@@ -24,7 +24,7 @@ export const darkTheme: Theme = {
     deprecated_gold: vars.color.gold200,
     deprecated_violet: vars.color.violet200,
     deprecated_modalBackdrop: 'linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))',
-    deprecated_stateOverlayHover: `rgba(153,161,189,0.08)`,
+    deprecated_stateOverlayHover: `rgba(191,191,191,0.08)`,
     dropShadow: `0px 4px 16px rgba(76, 130, 251, 0.4)`,
   },
   shadows: {

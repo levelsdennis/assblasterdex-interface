@@ -21,7 +21,7 @@ function getDeprecatedTheme(darkMode: boolean) {
     deprecated_accentTextLightPrimary: colors.gray50,
     deprecated_deepShadow: darkMode
       ? '12px 16px 24px rgba(0, 0, 0, 0.24), 12px 8px 12px rgba(0, 0, 0, 0.24), 4px 4px 8px rgba(0, 0, 0, 0.32);'
-      : '8px 12px 20px rgba(51, 53, 72, 0.04), 4px 6px 12px rgba(51, 53, 72, 0.02), 4px 4px 8px rgba(51, 53, 72, 0.04);',
+      : '8px 12px 20px rgba(0, 0, 0, 0.04), 4px 6px 12px rgba(0, 0, 0, 0.02), 4px 4px 8px rgba(51, 53, 72, 0.04);',
     deprecated_shallowShadow: darkMode
       ? '0px 0px 10px 0px rgba(34, 34, 34, 0.04);'
       : '0px 0px 10px 0px rgba(34, 34, 34, 0.04);',

@@ -46,7 +46,7 @@ const Gradient = styled.div<{ isDarkMode: boolean }>`
   ${({ isDarkMode }) =>
     isDarkMode
       ? css`
-          background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(8 10 24 / 100%) 45%);
+          background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0 0 0 / 100%) 45%);
         `
       : css`
           background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255 255 255 /100%) 45%);
@@ -179,11 +179,11 @@ const LandingButton = styled(BaseButton)`
 const ButtonCTA = styled(LandingButton)`
   background: linear-gradient(93.06deg, #efff00 2.66%, #fffd9f 98.99%);
   border: none;
-  color: ${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.black};
   transition: ${({ theme }) => `all ${theme.transition.duration.medium} ${theme.transition.timing.ease}`};
 
   &:hover {
-    box-shadow: 0px 0px 16px 0px #ff00c7;
+    box-shadow: 0px 0px 16px 0px #ffff00;
   }
 `
 

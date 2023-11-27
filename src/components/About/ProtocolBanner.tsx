@@ -20,12 +20,12 @@ const Banner = styled.div<{ isDarkMode: boolean }>`
   justify-content: space-between;
   padding: 32px 48px;
 
-  box-shadow: 0px 10px 24px rgba(51, 53, 72, 0.04);
+  box-shadow: 0px 10px 24px rgba(70, 70, 70, 0.04);
 
   background: ${({ isDarkMode }) =>
     isDarkMode
       ? `url(${meshSrc}), ${DARK_MODE_GRADIENT}`
-      : `url(${meshSrc}), linear-gradient(93.06deg, #FF00C7 2.66%, #FF9FFB 98.99%);`};
+      : `url(${meshSrc}), linear-gradient(93.06deg, #FFFF00 2.66%, #F3FF9F 98.99%);`};
 
   @media screen and (min-width: ${BREAKPOINTS.lg}px) {
     height: 140px;

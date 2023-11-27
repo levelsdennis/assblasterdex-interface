@@ -671,9 +671,9 @@ export function Swap({
                 onSwitchTokens(inputTokenHasTax, formattedAmounts[dependentField])
                 maybeLogFirstSwapAction(trace)
               }}
-              color={theme.neutral1}
+              color={theme.neutral2}
             >
-              <ArrowDown size="16" color={theme.neutral1} />
+              <ArrowDown size="16" color={theme.neutral2} />
             </ArrowContainer>
           </TraceEvent>
         </ArrowWrapper>

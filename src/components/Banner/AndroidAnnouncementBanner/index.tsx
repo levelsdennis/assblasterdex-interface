@@ -22,53 +22,5 @@ import {
 } from './styled'
 
 export default function AndroidAnnouncementBanner() {
-  const [hideAndroidAnnouncementBanner, toggleHideAndroidAnnouncementBanner] = useHideAndroidAnnouncementBanner()
-  const location = useLocation()
-  const isLandingScreen = location.search === '?intro=true' || location.pathname === '/'
-  const screenSize = useScreenSize()
-
-  const shouldDisplay = Boolean(!hideAndroidAnnouncementBanner && !isLandingScreen)
-  const isDarkMode = useIsDarkMode()
-
-  const onClick = () =>
-    openDownloadApp({
-      element: InterfaceElementName.UNISWAP_WALLET_BANNER_DOWNLOAD_BUTTON,
-    })
-
-  if (isMobileSafari) return null
-
-  return (
-    <PopupContainer show={shouldDisplay}>
-      <Container>
-        <Thumbnail src={isDarkMode ? darkAndroidThumbnail : lightAndroidThumbnail} alt="Android app thumbnail" />
-        <TextContainer onClick={!screenSize['xs'] ? onClick : undefined}>
-          <ThemedText.BodySmall lineHeight="20px">
-            <Trans>Uniswap on Android</Trans>
-          </ThemedText.BodySmall>
-          <ThemedText.LabelMicro>
-            <Trans>Available now - download from the Google Play Store today</Trans>
-          </ThemedText.LabelMicro>
-          <DownloadButton
-            onClick={(e) => {
-              e.stopPropagation()
-              onClick()
-            }}
-          >
-            <Trans>Download now</Trans>
-          </DownloadButton>
-        </TextContainer>
-        <StyledQrCode src={androidAnnouncementBannerQR} alt="App OneLink QR code" />
-        <StyledXButton
-          data-testid="uniswap-wallet-banner"
-          size={24}
-          onClick={(e) => {
-            // prevent click from bubbling to UI on the page underneath, i.e. clicking a token row
-            e.preventDefault()
-            e.stopPropagation()
-            toggleHideAndroidAnnouncementBanner()
-          }}
-        />
-      </Container>
-    </PopupContainer>
-  )
+  return null;
 }
